@@ -1,0 +1,363 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil
+{% endblock %}
+
+{% block content %}
+    <!--==========================
+        Intro Section
+    ============================-->
+    <section id="intro">
+      <div class="ftco-blocks-cover-1">
+        <div class="site-section-cover overlay">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 mt-5 pt-5">
+                <h3>Votre partenaire numérique</h3>
+                <h1 class="mb-3 font-weight-bold text-teal">Innovons Votre Présence en Ligne</h1>
+                <p>Création de sites et de projets web sur mesure.</p>
+                <p class="mt-5"><a class="btn-quote" href="#services">Services</a></p>
+              </div>
+              <div class="col-md-6 ml-auto align-self-end">
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="video-wrap">
+              <video id="myVideo" autoplay playsinline muted loop class="custom-video">   
+                  <source id="videoSource" class="video-file" src="{{ asset('/assets/videos/mikhail-nilov-8345506.mp4') }}" type='video/mp4'>
+              </video>
+          </div>
+      </div>
+    </section>
+
+    <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-world-outline"></i>
+            <h4 class="title"><a href="">Sites Internet</a></h4>
+            <p class="description">Vous souhaitez mettre en évidence vos compétences, vos services, votre expertise sur le web. Je crée des sites web avec ou sans gestion de contenu à votre image.</p>
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <i class="ion-ios-cart-outline"></i>
+            <h4 class="title"><a href="">E-Shop</a></h4>
+            <p class="description">Vous voulez démarrer une activité de vente en ligne ou vous avez déjà un commerce et vous voulez ajouter une corde à votre arc avec une boutique en ligne. Nous pouvons la créer ensemble.</p>
+          </div>
+
+          <div class="col-lg-4 box">
+            <i class="ion-ipad"></i>
+            <h4 class="title"><a href="">Applications Web</a></h4>
+            <p class="description">L'administratif vous pèse et vous voudriez augmenter votre productivité. Des outils numériques ou un CRM  peuvent structurer et alléger vos tâches au jour le jour.</p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Valeurs</h3>
+          <p>Nous, développeurs web, sommes les architectes numériques donnant vie à vos idées en pixels, en code et en innovation, nous mettons à votre service notre créativité et notre expertise du numérique pour des expériences en ligne intuitives et pratiques.</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{ asset('build/images/creativity.jpg') }}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-lightbulb-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Objectif créativité</a></h2>
+              <p>
+                Offrir une vue numérique sur votre activité grâce à un sens artistique et un soupçon de créativité conjugués au savoir-faire technique. Que ce soit pour un simple site internet ou un projet plus complexe.
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{ asset('build/images/proximity.jpg') }}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-people-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Proximité</a></h2>
+              <p>
+                Ma proximité se traduit par un engagement inébranlable à vous accompagner du début à la fin de votre projet web mais aussi et surtout d'assurer le support 
+                dont vous aurez besoin pour faire évoluer cet atout numérique.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{ asset('build/images/expertise.jpg') }}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Expertise</a></h2>
+              <p>
+                C'est plus de 20 ans de pratique de l'informatique, de veille technologique et de service aux utilisateurs qui me permettent aujourd'hui de traduire le besoin du client vers l'outil numérique qui lui conviendra au mieux. 
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Services</h3>
+          <p>
+           Le look et le design, c'est essentiel mais les fonctionnalités sont tout aussi importantes. Pour un site internet, une gamme de services y est toujours associée et varie en fonction des besoins de celui-ci. 
+          </p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-gear-outline"></i></div>
+            <h4 class="title"><a href="">Création de votre projet</a></h4>
+            <p class="description">Du design aux fonctionnalités, je crée des sites web sur mesure pour stimuler votre succès numérique.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-cloud-upload-outline"></i></div>
+            <h4 class="title"><a href="">Hébergement dédié</a></h4>
+            <p class="description">L'hébergement de site web est un service essentiel qui permet à un site d'être accessible en ligne via Internet 24/7.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-email-outline"></i></div>
+            <h4 class="title"><a href="">E-Mails & Newsletter</a></h4>
+            <p class="description">La plupart du temps, un projet web permet aux visiteurs de s'inscrire à une newsletter ou simplement de communiquer avec vous.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-locked-outline"></i></div>
+            <h4 class="title"><a href="">Backup et sécurité</a></h4>
+            <p class="description">Il est capital que votre site internet soit sécurisé, tant pour vos données que pour celles de vos clients.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-pie-outline"></i></div>
+            <h4 class="title"><a href="">Analyse et statistiques</a></h4>
+            <p class="description">Grâce à des outils d'analyse, il est possible d'obtenir des statistiques sur le traffic généré par votre site ou boutique en ligne.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-telephone-outline"></i></div>
+            <h4 class="title"><a href="">Support</a></h4>
+            <p class="description">Tout client a droit à un support de proximité et direct par e-mail et/ou téléphone.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Passez à l'Action</h3>
+        <p>Prêt à transformer votre vision en réalité ? Contactez-moi dès aujourd'hui pour des informations détaillées ou une offre sur mesure. Votre projet commence par un simple clic, et je suis là pour vous guider à chaque étape du chemin.</p>
+        <a class="cta-btn" href="#contact">Contact</a>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Quelques réalisations</h3>
+        </header>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ asset('build/images/collegedubiereau.jpg') }}" class="img-fluid" alt="">
+                <a href="{{ asset('build/images/collegedubiereau.jpg') }}" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="https://www.collegedubiereau.be" target="_blank" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Le collège du Biéreau</a></h4>
+                <p>Ecole</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ asset('build/images/art-emoi.jpg') }}" class="img-fluid" alt="">
+                <a href="{{ asset('build/images/art-emoi.jpg') }}" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="https://www.art-emoi.be" target="_blank" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Art Émoi</a></h4>
+                <p>Services & Thérapie</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ asset('build/images/atelier-ozmoz.jpg') }}" class="img-fluid" alt="">
+                <a href="{{ asset('build/images/atelier-ozmoz.jpg') }}" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="https://www.atelierozmoz.be" target="_blank" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Atliers Ozmoz</a></h4>
+                <p>Ateliers créatifs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ asset('build/images/lamine-biere.jpg') }}" class="img-fluid" alt="">
+                <a href="{{ asset('build/images/lamine-biere.jpg') }}" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="https://www.lamine-biere.be" target="_blank" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">La Mine</a></h4>
+                <p>Boissons</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ asset('build/images/cf-biereau.jpg') }}" class="img-fluid" alt="">
+                <a href="{{ asset('build/images/cf-biereau.jpg') }}" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="https://www.cfbiereau.be" target="_blank" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Comité des fêtes</a></h4>
+                <p>Association</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ asset('build/images/technichem.jpg') }}" class="img-fluid" alt="">
+                <a href="{{ asset('build/images/technichem.jpg') }}" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="https://technichem.mywebcreation.be" target="_blank" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Technichem</a></h4>
+                <p>Hydrofuges et fongicides</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contactez-moi</h3>
+          <p>
+            Développeur web à portée de clic - Parlez-moi de votre projet!<br>
+            Je suis à votre disposition pour discuter de vos besoins et analyser ce qui vous conviendrait le mieux. </p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Adresse</h3>
+              <address>1435 Mont-Saint-Guibert, Belgique</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Téléphone</h3>
+              <p><a href="tel:+320470936334">+32 (0)470 93 63 34</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:xavier@mywebcreation.be">xavier@mywebcreation.be</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+{% endblock %}

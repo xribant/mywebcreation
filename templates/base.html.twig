@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>MWC - {% block title %}{% endblock %}</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('build/images/apple-touch-icon.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('build/images/favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('build/images/favicon-16x16.png') }}">
+  <link rel="manifest" href="{{ asset('build/images/site.webmanifest') }}">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{{ asset('assets/lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{ asset('assets/lib/animate/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+
+  
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+
+
+  <!-- =======================================================
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <a href="#intro" class="scrollto"><img src="{{ asset('build/images/logo-mwc.png') }}" alt"logo"></a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="active"><a href="#intro">Accueil</a></li>
+          <li><a href="#about">Valeurs</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Réalisations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  {% block content%}
+
+  {% endblock %}
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="{{ asset('build/images/logo-mwc.png') }}" alt="Logo">
+            <p>
+              Spécialisé dans la création de sites web sur mesure pour les indépendants et PME. Je crois en l'importance de soutenir le tissu local en conçevant des solutions web novatrices utiles et pratiques offrant une vue sur internet et des fonctionnalités qui facilitent la prestation de service.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Liens</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#intro">Accueil</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#about">Valeurs</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#services">Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#portfolio">Réalisations</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contactez moi</h4>
+            <p>
+              <strong>Tel:</strong> +32 (0)470 93 63 34<br>
+              <strong>Email:</strong> xavier@mywebcreation.be<br>
+              <strong>TVA:</strong> BE 0774.894.891<br>
+              <strong>IBAN:</strong> BE94 7320 6133 9114<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/MyWebCreationBe" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Rejoignez la communauté MWC et restez à l'affût des dernières actualités et de conseils exclusifs directement dans votre boîte de réception</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="S'inscrire">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+         Copyright &copy; <script>document.write(new Date().getFullYear());</script><strong> My Web Creation</strong> | Tous droits réservés.
+      </div>
+      
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{{ asset('assets/lib/jquery/jquery.min.js') }}"></script>
+  <script src="{{ asset('assets/lib/jquery/jquery-migrate.min.js') }}"></script>
+  <script src="{{ asset('assets/lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/lib/easing/easing.min.js') }}"></script>
+  <script src="{{ asset('assets/lib/superfish/hoverIntent.js') }}"></script>
+  <script src="{{ asset('assets/lib/superfish/superfish.min.js') }}"></script>
+  <script src="{{ asset('assets/lib/wow/wow.min.js') }}"></script>
+  <script src="{{ asset('assets/lib/waypoints/waypoints.min.js') }}"></script>
+  <script src="{{ asset('assets/lib/counterup/counterup.min.js') }}"></script>
+  <script src="{{ asset('assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('assets/lib/isotope/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ asset('assets/lib/lightbox/js/lightbox.min.js') }}"></script>
+  <script src="{{ asset('assets/lib/touchSwipe/jquery.touchSwipe.min.js') }}"></script>
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
+  
+
+</body>
+</html>

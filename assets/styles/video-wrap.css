@@ -1,0 +1,17 @@
+/*---------------------------------------
+  VIDEO              
+-----------------------------------------*/
+.video-wrap {
+    z-index: -100;
+  }
+  
+  .custom-video {
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: calc(100vh - 196px);
+    min-height: 777px;
+  }
