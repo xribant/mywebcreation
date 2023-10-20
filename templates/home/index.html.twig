@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil
+{% block title %}Création de sites et de projets web sur mesure
 {% endblock %}
 
 {% block content %}
     <!--==========================
         Intro Section
     ============================-->
-    <section id="intro">
+    <section id="intro" class="nav__section">
       <div class="ftco-blocks-cover-1">
         <div class="site-section-cover overlay">
           <div class="container">
@@ -25,7 +25,7 @@
         </div>
           <div class="video-wrap">
               <video id="myVideo" autoplay playsinline muted loop class="custom-video">   
-                  <source id="videoSource" class="video-file" src="{{ asset('/assets/videos/mikhail-nilov-8345506.mp4') }}" type='video/mp4'>
+                  <source id="videoSource" class="video-file" src="{{ asset('/assets/videos/fireworks.mp4') }}" type='video/mp4'>
               </video>
           </div>
       </div>
@@ -36,7 +36,7 @@
     <!--==========================
       Featured Services Section
     ============================-->
-    <section id="featured-services">
+    <section id="featured-services" class="nav__section">
       <div class="container">
         <div class="row">
 
@@ -65,7 +65,7 @@
     <!--==========================
       About Us Section
     ============================-->
-    <section id="about">
+    <section id="about" class="nav__section">
       <div class="container">
 
         <header class="section-header">
@@ -122,7 +122,7 @@
     <!--==========================
       Services Section
     ============================-->
-    <section id="services">
+    <section id="services" class="nav__section">
       <div class="container">
 
         <header class="section-header wow fadeInUp">
@@ -173,7 +173,7 @@
     <!--==========================
       Call To Action Section
     ============================-->
-    <section id="call-to-action" class="wow fadeIn">
+    <section id="call-to-action" class="wow fadeIn nav__section">
       <div class="container text-center">
         <h3>Passez à l'Action</h3>
         <p>Prêt à transformer votre vision en réalité ? Contactez-moi dès aujourd'hui pour des informations détaillées ou une offre sur mesure. Votre projet commence par un simple clic, et je suis là pour vous guider à chaque étape du chemin.</p>
@@ -184,7 +184,7 @@
     <!--==========================
       Portfolio Section
     ============================-->
-    <section id="portfolio"  class="section-bg" >
+    <section id="portfolio"  class="section-bg nav__section" >
       <div class="container">
 
         <header class="section-header">
@@ -292,7 +292,7 @@
     <!--==========================
       Contact Section
     ============================-->
-    <section id="contact" class="section-bg wow fadeInUp">
+    <section id="contact" class="section-bg wow fadeInUp nav__section">
       <div class="container">
 
         <div class="section-header">
@@ -331,29 +331,25 @@
         </div>
 
         <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
+            {{ form_start(form, {'attr': {'class': 'contactForm'}}) }}
+						{{ form_row(form._token) }}
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  {{ form_row(form.name) }}
+                </div>
+                <div class="form-group col-md-6">
+                  {{ form_row(form.email) }}
+                </div>
               </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
+              <div class="form-group">
+                {{ form_row(form.subject) }}
               </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
+              <div class="form-group">
+                {{ form_row(form.message) }}
+              </div>
+                {{ form_row(form.recaptcha) }}
+              <div class="text-center"><button type="submit">Envoyer</button></div>
+            {{ form_end(form) }}
         </div>
 
       </div>
